@@ -26,7 +26,7 @@ This project is a sophisticated eBay scraper and market analysis tool. It scrape
 1.  **Clone the repository**:
     ```bash
     git clone <repository-url>
-    cd SCRAPY-PROJECTS
+    cd ebay-products-market-analizer
     ```
 
 2.  **Install dependencies**:
@@ -39,7 +39,7 @@ This project is a sophisticated eBay scraper and market analysis tool. It scrape
     *Key dependencies*: `requests`, `beautifulsoup4`, `celery`, `bokeh`, `pandas`, `langchain`, `langgraph`, `langchain-google-genai`, `python-dotenv`.
 
 3.  **Configure Environment Variables**:
-    Create a `.env` file in the `project2` directory (or root) with the following keys:
+    Create a `.env` file in the `ebay-products-market-analizer` directory (or root) with the following keys:
 
     ```ini
     # Google Gemini API Key (Required for AI Analysis)
@@ -64,7 +64,7 @@ The script is configured to run in "eager mode" by default, meaning it doesn't r
 
 1.  Navigate to the project directory:
     ```bash
-    cd project2
+    cd ebay-products-market-analizer
     ```
 
 2.  Run the main script:
@@ -81,7 +81,7 @@ The script is configured to run in "eager mode" by default, meaning it doesn't r
 
 To use the actual asynchronous task queue:
 
-1.  Modify `project2/main.py`:
+1.  Modify `ebay-products-market-analizer/main.py`:
     Set `app.conf.task_always_eager = False` in the `if __name__ == "__main__":` block.
 
 2.  Start the Celery worker:
@@ -96,7 +96,7 @@ To use the actual asynchronous task queue:
 
 ## Project Structure
 
-*   `project2/main.py`: The core script containing the scraper, LangGraph workflow, Gemini integration, and Bokeh visualization logic.
+*   `ebay-products-market-analizer/main.py`: The core script containing the scraper, LangGraph workflow, Gemini integration, and Bokeh visualization logic.
 *   `pyproject.toml`: Project dependencies and configuration.
 
 ## Troubleshooting
